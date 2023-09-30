@@ -12,6 +12,10 @@ body{
 }
 .hero{
     display:flex;
+    @media (max-width: 1200px){
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 .hero_title{
 color: #FFF;
@@ -43,6 +47,11 @@ font-style: normal;
 font-weight: 700;
 line-height: normal;
 }
+.boxbutton{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 1vw;
+}
 .rectangle {
     width: 50vw;
     height:60vh;
@@ -50,4 +59,7 @@ line-height: normal;
     border-radius: 16px;
     background: rgba(141, 141, 141, 0.18); 
     padding: 2vw;
+}
+.anim{
+    width: calc(600 * var(--res));
 }
