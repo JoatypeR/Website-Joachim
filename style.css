@@ -17,7 +17,7 @@ body {
   flex-wrap: nowrap;
   justify-content: space-between;
   position: sticky;
-  font-size: calc(24 * var(--res));
+  font-size: 18px;
   font-family: "roboto", sans-serif;
   color: white;
   text-decoration: none;
@@ -39,6 +39,7 @@ body {
 
 .hero {
   display: flex;
+  flex-grow: 1;
   margin-top: 20vh;
 }
 @media (max-width: 1200px) {
@@ -60,9 +61,9 @@ body {
 .hero_text {
   color: #FFF;
   font-family: "Roboto", sans-serif;
-  font-size: calc(18 * var(--res));
+  font-size: 18px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   line-height: normal;
 }
 
@@ -87,13 +88,14 @@ body {
 
 .rectangle {
   width: 50vw;
-  height: 60vh;
+  height: -moz-fit-content;
+  height: fit-content;
   flex-shrink: 0;
   border-radius: 16px;
   background: rgba(141, 141, 141, 0.18);
-  padding: 2vw;
+  padding: 40px;
 }
 
 .anim {
-  width: calc(600 * var(--res));
+  width: 30vw;
 }/*# sourceMappingURL=style.css.map */
